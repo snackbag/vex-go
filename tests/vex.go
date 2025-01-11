@@ -1,12 +1,16 @@
-package tests
+package main
 
 import (
 	rl "github.com/gen2brain/raylib-go/raylib"
 )
 
 func main() {
+	rl.SetTraceLogLevel(rl.LogError)
+
 	rl.InitWindow(800, 450, "raylib [core] example - basic window")
 	defer rl.CloseWindow()
+
+	vex.Cool()
 
 	rl.SetTargetFPS(60)
 

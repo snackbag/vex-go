@@ -1,4 +1,4 @@
-module github.com/snackbag/vex/tests
+module github.com/snackbag/vex-go/tests
 
 go 1.23.4
 

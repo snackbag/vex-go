@@ -2,16 +2,13 @@ package main
 
 import (
 	rl "github.com/gen2brain/raylib-go/raylib"
-	"github.com/snackbag/vex-go/vex"
 )
 
 func main() {
 	rl.SetTraceLogLevel(rl.LogError)
 
-	rl.InitWindow(800, 450, "raylib [core] example - basic window")
+	rl.InitWindow(800, 450, "Window")
 	defer rl.CloseWindow()
-
-	vex.Cool()
 
 	rl.SetTargetFPS(60)
 
@@ -19,7 +16,7 @@ func main() {
 		rl.BeginDrawing()
 
 		rl.ClearBackground(rl.RayWhite)
-		rl.DrawText("Congrats! You created your first window!", 190, 200, 20, rl.LightGray)
+		rl.DrawText("text", 10, 10, 20, rl.Black)
 
 		rl.EndDrawing()
 	}

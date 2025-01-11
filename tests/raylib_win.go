@@ -4,7 +4,7 @@ import (
 	rl "github.com/gen2brain/raylib-go/raylib"
 )
 
-func main() {
+func TestRaylibWin() {
 	rl.SetTraceLogLevel(rl.LogError)
 
 	rl.InitWindow(800, 450, "Window")

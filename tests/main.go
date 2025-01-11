@@ -22,6 +22,9 @@ func main() {
 		switch input {
 		case "raylib_win":
 			TestRaylibWin()
+		case "q":
+			fmt.Println("Aborting testing")
+			os.Exit(0)
 		default:
 			fmt.Println("No test found by the name of '" + input + "'")
 		}

@@ -8,8 +8,22 @@ type VApp struct {
 	width  int
 	height int
 
+	visibility bool
+
 	title   string
 	widgets []widgets.VWidget
+}
+
+func (app *VApp) Show() {
+	app.SetVisibility(true)
+}
+
+func (app *VApp) Hide() {
+	app.SetVisibility(false)
+}
+
+func (app *VApp) SetVisibility(visibility bool) {
+	app.visibility = visibility
 }
 
 func NewApp(title string) *VApp {

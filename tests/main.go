@@ -13,6 +13,7 @@ func main() {
 	fmt.Println("Welcome to the world's most awesomest and best testing system!11!!")
 	fmt.Println("Here's a list of all tests:")
 	fmt.Println("- raylib_win")
+	fmt.Println("- vex_openwin")
 
 	for {
 		fmt.Print("\nEnter test (q): ")
@@ -22,6 +23,8 @@ func main() {
 		switch input {
 		case "raylib_win":
 			TestRaylibWin()
+		case "vex_openwin":
+			TestVexOpenWin()
 		case "q":
 			fmt.Println("Aborting testing")
 			os.Exit(0)
